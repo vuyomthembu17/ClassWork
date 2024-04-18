@@ -1,0 +1,36 @@
+Description:
+The provided code is a simple implementation of a library system in Java. It consists of three main classes: LibrarySystem, Book, and Library. The LibrarySystem class serves as the entry point for the application, where some books are added to the library and their availability is displayed. The Book class represents the book entity with attributes such as title, author, ISBN, and quantity. The Library class manages the collection of books, providing functionalities like adding books, searching for books by title, and displaying all available books.
+
+Instructions:
+
+Running the Application:
+Ensure that you have a Java development environment set up.
+Open the provided Java files (LibrarySystem.java, Book.java, Library.java) in your preferred Java IDE or text editor.
+Compile and run the LibrarySystem.java file to execute the application.
+The application will add some sample books to the library and display their availability.
+Customization:
+You can customize the main method in LibrarySystem.java to add your own books with different titles, authors, ISBNs, and quantities.
+Functionalities:
+Adding Books: Use the addBook() method in the Library class to add books to the library. If a book with the same title and author already exists, its quantity will be incremented.
+Searching Books: Utilize the searchBook() method in the Library class to search for a book by its title.
+Displaying Available Books: Call the displayAvailableBooks() method in the Library class to see all the books available in the library.
+Sample Usage:
+
+java Code
+public class LibrarySystem {
+
+    public static void main(String[] args) {
+        Library library = new Library();
+
+        // Adding some books
+        library.addBook(new Book("Romeo and Juliet", "William Shakespeare's", "123456789", 3));
+        library.addBook(new Book("Programming 731", "Jemina Matiya", "246810122", 1));
+        library.addBook(new Book("Human Computer Interaction 700", "Jealous Kwamaya", "020304050", 2));
+        library.addBook(new Book("Programming 741", "Jemina Matiya", "020304050", 2));
+
+        // Displaying all available books
+        library.displayAvailableBooks();
+    }
+}
+Author:
+This code was authored by Vuyo Mthembu.
